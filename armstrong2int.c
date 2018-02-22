@@ -3,25 +3,25 @@ void main()
  
 {
  
-  int a,b,i,temp,num,rem;
+  int x,y,i,a,total,extra;
  
   printf("Enter two numbers intervals ");
-  scanf("%d %d", &a, &b);
-  printf("Armstrong numbers between %d and %d are:",a,b);
-  for(i=a+1; i<b; ++i)
+  scanf("%d %d", &x, &y);
+  printf("Armstrong numbers between %d and %d are:",x,y);
+  for(i=x+1; i<y; ++i)
  
   {
-      temp=i;
-      num=0;
-      while(temp!=0)
+      a=i;
+      total=0;
+      while(a!=0)
  
       {
-          rem=(temp%10);
-          num+=rem*rem*rem;
-          temp/=10;
+          extra=(a%10);
+          total+=extra*extra*extra;
+          a/=10;
           
       }
-      if(i==num)
+      if(i==total)
       {
           printf("%d ",i);
       }
